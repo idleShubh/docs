@@ -1,80 +1,85 @@
 ---
 title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+description: "An overview of Veritus.ai's features and workflows"
+source: "https://veritus.ai/docs/quickstart"
 ---
 
-## Get started in three steps
+import { LearnMore } from '~/components/learn-more'
 
-Get your documentation site running locally and make your first customization.
+Welcome to Veritus.ai! This guide will walk you through the main features and workflows for research.
 
-### Step 1: Set up your local environment
+1. **Visit [veritus.ai](https://veritus.ai)** and create an account  
+2. **Start a Paper Search** to find the most relevant research papers  
+3. **Use Paper Insights** to quickly understand uploaded PDFs  
+4. **Run Manuscript Assistant** to analyze and strengthen your draft  
+5. **Share reports** or export your findings for collaboration
 
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
+## Paper Search: Find what matters
 
-### Step 2: Deploy your changes
+Start by exploring the research landscape. Veritus.ai can find the top 100 relevant papers on any topic in minutes.  
 
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+Try these queries to get started:
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+* **"Top papers on protein folding and AI methods"**  
+* **"Latest studies on urban climate change adaptation"**  
+* **"Key research on battery recycling efficiency"**  
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+<LearnMore href="/docs/paper-search" icon="arrow">
+  Learn more about Paper Search
+</LearnMore>
 
-### Step 3: Go live
+## Paper Insights: Ask and understand
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+Upload one or more PDFs and ask natural questions. Veritus.ai summarizes methods, findings, and gaps, linking every answer to the original source.  
+
+Examples of questions to try:  
+
+* **"What methods did this study use?"**  
+* **"Summarize the results in plain English."**  
+* **"What are the gaps compared to other recent work?"**  
+
+<LearnMore href="/docs/paper-insights" icon="arrow">
+  Learn more about Paper Insights
+</LearnMore>
+
+## Manuscript Assistant: Strengthen your draft
+
+Veritus.ai’s Manuscript Assistant helps refine your paper before submission:  
+
+1. **Upload your draft** to get a structured analysis  
+2. **Review feedback** on clarity, rigor, and literature coverage  
+3. **Compare** your draft 1:1 with top papers in your field  
+4. **Export a report** to share with co-authors or students  
+
+<LearnMore href="/docs/manuscript-assistant" icon="arrow">
+  Learn more about Manuscript Assistant
+</LearnMore>
+
+## Collaborate: Share and guide
+
+Generate structured reports and share them with students, collaborators, or co-authors through secure links. This makes it easy to give feedback and guide research teams.  
+
+<LearnMore href="/docs/collaboration" icon="arrow">
+  Learn more about collaboration
+</LearnMore>
+
+## Organize: Build your research library
+
+Your **Paper Collection** acts as a personal, searchable library. Save drafts, linked references, and reports in one place for easy reuse.  
+
+<LearnMore href="/docs/paper-collection" icon="arrow">
+  Learn more about Paper Collection
+</LearnMore>
 
 ## Next steps
 
-Now that you have your docs running, explore these key features:
+Now that you understand the basics, try running a **literature review in under an hour** or explore case studies from professors and labs using Veritus.ai.
 
-<CardGroup cols={2}>
+## Need help?
 
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
+* **Community Forum**: Ask questions in the [Veritus community](https://community.veritus.ai)  
+* **Support**: Contact support at [support@veritus.ai](mailto:support@veritus.ai)  
 
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
-</CardGroup>
-
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
+<LearnMore href="https://veritus.ai" icon="arrow">
+  Ready to start your research faster?
+</LearnMore>

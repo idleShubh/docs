@@ -1,94 +1,195 @@
 ---
-title: 'Development'
-description: 'Preview changes locally to update your docs'
+title: "FAQs"
+description: "Common questions about what Veritus.ai is, how it works, and how to use it for research."
+source: "https://veritus.ai/docs/faqs"
 ---
 
-<Info>
-  **Prerequisites**:
-  - Node.js version 19 or higher
-  - A docs repository with a `docs.json` file
-</Info>
+import { LearnMore } from '~/components/learn-more'
 
-Follow these steps to install and run Mintlify on your operating system.
+## About Veritus.ai
 
-<Steps>
-<Step title="Install the Mintlify CLI">
+### What is Veritus.ai?
 
-```bash
-npm i -g mint
-```
-</Step>
+Veritus.ai is an AI research platform that helps professors, postdocs, and students save time. It brings paper search, paper insights, and manuscript review into one place. Researchers at Kyoto University, MIT, and IIT Roorkee already use it to finish tasks five times faster.
 
-<Step title="Preview locally">
+### How does Veritus.ai differ from other AI research tools?
 
-Navigate to your docs directory where your `docs.json` file is located, and run the following command:
+Most tools only summarize or give short answers. Veritus.ai is different because every answer links back to the original paper, so you can check the source. It also combines multiple workflows—search, analysis, and writing—so you don’t need five separate tools.
 
-```bash
-mint dev
-```
+### Who should use Veritus.ai?
 
-A local preview of your documentation will be available at `http://localhost:3000`.
+It’s designed for professors, postdocs, PhD students, and lab leaders. But it also works well for students writing theses or R&D professionals who need fast access to reliable papers.
 
-</Step>
-</Steps>
+### Is Veritus.ai free to use?
 
-## Custom ports
+Yes. You can try a free account with limited searches and analysis. For regular use, there are paid plans for students, researchers, and professors with larger quotas.  
 
-By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. For example, to run Mintlify on port 3333, use this command:
+<LearnMore href="/docs/pricing" icon="arrow">
+  Learn more about pricing
+</LearnMore>
 
-```bash
-mint dev --port 3333
-```
+### How do I create an account?
 
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
+Go to [veritus.ai](https://veritus.ai) and click **Get Started Free**. Sign up with your academic or work email, set a password, and you’re ready to begin.
 
-```md
-Port 3000 is already in use. Trying 3001 instead.
-```
+### What are the system requirements?
 
-## Mintlify versions
+All you need is internet access and a browser like Chrome, Safari, or Edge. Veritus.ai runs online, so there’s no software to install.
 
-Please note that each CLI release is associated with a specific version of Mintlify. If your local preview does not align with the production version, please update the CLI:
+---
 
-```bash
-npm mint update
-```
+## Research-Focused Questions
 
-## Validating links
+### How can AI help with systematic literature reviews?
 
-The CLI can assist with validating links in your documentation. To identify any broken links, use the following command:
+AI can scan thousands of papers quickly and suggest the most relevant ones. Veritus.ai finds the top 100 papers in minutes and organizes them for review, saving researchers weeks of manual work.
 
-```bash
-mint broken-links
-```
+### What’s the difference between AI research tools and traditional methods?
 
-## Deployment
+Traditional reviews mean reading and sorting papers by hand. AI tools like Veritus.ai speed this up by ranking papers with relevance scores and showing topic trends. You still stay in control of what to include.
 
-If the deployment is successful, you should see the following:
+### Can AI tools help with research bias detection?
 
-<Frame>
-  <img src="/images/checks-passed.png" alt="Screenshot of a deployment confirmation message that says All checks have passed." style={{ borderRadius: '0.5rem' }} />
-</Frame>
+Yes, AI can highlight gaps and imbalances in cited literature. Veritus.ai points out missing areas in your draft and suggests diverse studies, helping reduce citation bias.
 
-## Code formatting
+### How do I ensure research quality when using AI tools?
 
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
+Always check that answers link back to the source. Veritus.ai ensures every summary and insight is traceable to the original paper, so you can verify accuracy before citing.
 
-## Troubleshooting
+### What are the limitations of AI in academic research?
 
-<AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
+AI speeds up search and review but does not replace human judgment. It can miss nuance in theory or context. Veritus.ai helps reduce errors, but final decisions always rest with the researcher.
 
-    This may be due to an outdated version of node. Try the following:
-    1. Remove the currently-installed version of the CLI: `npm remove -g mint`
-    2. Upgrade to Node v19 or higher.
-    3. Reinstall the CLI: `npm i -g mint`
-  </Accordion>
+---
 
-  <Accordion title="Issue: Encountering an unknown error">
-  
-    Solution: Go to the root of your device and delete the `~/.mintlify` folder. Then run `mint dev` again.
-  </Accordion>
-</AccordionGroup>
+## Core Features & Capabilities
 
-Curious about what changed in the latest CLI version? Check out the [CLI changelog](https://www.npmjs.com/package/mintlify?activeTab=versions).
+### What types of research can I conduct with Veritus.ai?
+
+You can use it for literature discovery, manuscript analysis, paper comparison, and grant preparation. It works across sciences, engineering, and social sciences.
+
+### How does the AI literature review feature work?
+
+You upload papers or enter a query, and Veritus.ai maps the most relevant research. It summarizes key themes, highlights gaps, and suggests additional papers to strengthen your review.
+
+### Can I analyze research papers automatically?
+
+Yes. Veritus.ai can summarize a paper, highlight methods and findings, and answer questions about it. Every insight links back to the source PDF.
+
+### What citation formats does Veritus.ai support?
+
+You can export references in common academic formats like APA, MLA, and Chicago. Citations are tied to the paper source for easy cross-checking.
+
+### How accurate is the AI-powered research analysis?
+
+In internal tests and user studies, Veritus.ai maintains near-zero hallucination rates because it grounds answers in the uploaded PDF. You can always verify the highlighted text.
+
+### Can I collaborate with team members on research projects?
+
+Yes. You can share structured reports and invite co-authors or students via secure view-only links. This makes it easier to guide PhDs or work across labs.
+
+---
+
+## Research Workflows
+
+### How do I start a new research workflow project?
+
+From your dashboard, click **New Workflow**. Choose paper search, paper insights, or manuscript review. Upload a draft or enter your query, and Veritus.ai sets up the workspace.
+
+### What’s the best way to organize my research data?
+
+Use the **Paper Collection** feature. It stores drafts, linked references, and reports in one searchable library. You can attach related papers to any project.
+
+### Can I import existing research from other tools?
+
+Yes. You can upload PDFs from databases, citation managers, or your computer. Open-access papers import directly into Veritus.ai for analysis.
+
+### How do I export my research findings?
+
+You can download structured reports as editable text or share them as secure links. Citations and summaries are included for easy reuse.
+
+### What file formats are supported for import/export?
+
+For input, Veritus.ai supports PDF uploads and text queries. For output, you can export in text, PDF, and citation formats like BibTeX.
+
+---
+
+## Advanced Features
+
+### How does the AI research assistant work?
+
+The assistant lets you ask natural questions about a paper. Veritus.ai answers directly and shows the sentence from the PDF it came from.
+
+### Can I customize research parameters?
+
+Yes. You can set keywords, choose focus areas, or highlight papers that match your intent. This guides the AI to refine results.
+
+### What databases does Veritus.ai access?
+
+It draws from over 200 million research papers across open databases and trusted sources. Uploaded PDFs are also analyzed directly.
+
+### How do I set up automated research alerts?
+
+Alerts are part of the upcoming workflow tools. You’ll be able to set keywords and receive updates when new papers match your topic.
+
+### Can I integrate Veritus.ai with other research tools?
+
+Integration options are expanding. For now, you can export citations to reference managers and share reports with collaborators.
+
+---
+
+## Technical & Troubleshooting
+
+### Why is my research query not returning results?
+
+Check your keywords or try uploading a sample paper. Narrow queries work better than very broad ones.
+
+### How do I resolve authentication issues?
+
+Make sure you’re signing in with the same email you used to register. If problems persist, reset your password or contact support.
+
+### What should I do if the AI analysis seems incorrect?
+
+Review the highlighted source in the PDF. If the issue continues, re-upload the paper or send feedback through the support form.
+
+### How do I report bugs or technical issues?
+
+Use the in-app **Help** button or email [support@veritus.ai](mailto:support@veritus.ai). Include screenshots and steps to help the team reproduce the problem.
+
+### Are there API limits or usage restrictions?
+
+Yes. Free and paid plans have quotas on searches and manuscript reviews. Details are listed on the [pricing page](/docs/pricing).
+
+---
+
+## Data & Privacy
+
+### How is my research data protected?
+
+All files are stored securely, and you control access. Data is never shared without your consent.
+
+### Can I delete my research projects?
+
+Yes. You can delete any project or file directly from your account, and it will be removed from Veritus servers.
+
+### Is my data used to train AI models?
+
+No. Veritus.ai never trains models on your private data without permission.
+
+### How do you ensure research confidentiality?
+
+Access is limited to your account and chosen collaborators. Reports are shared through secure, view-only links.
+
+### What are your data retention policies?
+
+Your projects remain until you delete them. If you cancel your account, all data can be permanently erased on request.
+
+---
+
+## What if I need help?
+
+If you run into issues or have further questions, you can:
+
+* Browse the documentation (you are here).  
+* Join the discussion in the [community forum](https://community.veritus.ai).  
+* Contact support at [support@veritus.ai](mailto:support@veritus.ai).  
